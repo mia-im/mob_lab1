@@ -13,7 +13,7 @@ namespace ConsoleMyP
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите n - высоту здания");
+            Console.WriteLine("Введите натуральное число n");
             int n = int.Parse(Console.ReadLine());
             // Call the method for calculating P from the library
             double P = MyLib.MyP.P(n);
