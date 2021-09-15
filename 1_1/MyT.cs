@@ -15,7 +15,11 @@ namespace MyLib
         /// <returns>Returns the value of the T function for the specified variables</returns>
         public static double T(double h, double g)
         {
-            double result = Math.Sqrt(2 * h / g);
+            double result = 0;
+            if (g > 0)
+            {
+                result = Math.Sqrt(2 * h / g);
+            }
             return result;
         }
     }
